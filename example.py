@@ -26,12 +26,6 @@ def core1_task():
         Iono.process()
         time.sleep_ms(1)
 
-
-# handler for D3 debonced state change (see below)
-def on_debounce(pin, val):
-    print("{} debounce = {}".format(pin.name(), val))
-
-
 _thread.start_new_thread(core1_task, ())
 
 # Make sure Iono.init() is complete
