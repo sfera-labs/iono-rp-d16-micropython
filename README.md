@@ -232,7 +232,7 @@ Equivalent to `Iono.D<n>.value(False)`
 
 The `Iono` object has the `RS485` attribute, which is a wrapper of the [UART](https://docs.micropython.org/en/latest/library/machine.UART.html) instance connected to Iono's RS-485 interface.
 
-The available methods are those of the [UART class](https://docs.micropython.org/en/latest/library/machine.UART.html#methods), plus the `txen(enable)`: method which controls the TX-enable line. Call `RS485.txen(True)` before writing data and call `RS485.txen(False)` before incoming data is expected.
+The available methods are those of the [UART class](https://docs.micropython.org/en/latest/library/machine.UART.html#methods), plus the `txen(enable)` method:
 
 #### `Iono.RS485.txen(enable)`
 Controls the TX-enable line of the RS-485 interface.    
